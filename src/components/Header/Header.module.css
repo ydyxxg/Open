@@ -1,0 +1,87 @@
+body{
+   background: #E5E5E5; 
+   height: auto;
+}
+
+.header {
+    display:grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-top: 20px;
+    column-gap: 250px;
+    height: 72px;
+}
+
+.header .logo  svg{
+    width: 155px;
+    margin-right: 40px;
+}
+
+.header .nav {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    column-gap: 80px;
+}
+
+.header .nav a {
+    margin: auto;
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 20px;
+    color: #333333;
+    text-decoration: none;
+}
+
+.header .button {
+    margin: auto;
+    width: 195px;
+    height: 50px;
+    background: #87B645;
+    border-radius: 4px;
+    border: none;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media(max-width: 1440px){
+    body{
+        border-right: 1px solid #333333;
+    }
+
+    .header {
+        column-gap: 100px;
+    }
+
+    .header .logo  svg{
+        width: 130px;
+    }
+    
+    .header .nav {
+        column-gap: 45px;
+    }
+    
+    .header .nav a {
+        font-size: 18px;
+    }
+
+    .header .button {
+        width: 170px;
+    }
+}

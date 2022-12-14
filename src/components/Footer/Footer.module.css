@@ -1,0 +1,140 @@
+.footer {
+    display: grid;
+    height: 435px;
+    overflow: hidden;
+}
+
+.footer .spot1 {
+    position: absolute;
+    z-index: -0;
+    margin-top: 85px;
+}
+
+.footer .spot2 {
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 105px;
+    z-index: -1;
+}
+
+.footer .conteiner {
+    position: relative;
+    z-index: 1;
+    margin-top: 250px;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: left;
+    column-gap: 50px;
+}
+
+.footer .logo  svg{
+    width: 150px;
+    margin-right: 200px;
+    margin-left: 60px;
+}
+
+.footer .conteiner span {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 24px;
+    color: #333333;
+}
+
+.footer .conteiner p {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+    margin: 30px 0;
+}
+
+.footer .conteiner .img {
+    margin-left: 200px;
+    margin-right: 40px;
+}
+
+.footer .spot3 {
+    position: absolute;
+    z-index: -1;
+    margin-left: 843px;
+    margin-top: 5px;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@media(max-width: 1024px){
+    
+    .footer .spot1 {
+        margin-top: 90px;
+    }
+
+    .footer .spot1 svg{
+        width: 500px; 
+        height: 340px;
+    }
+    
+    .footer .spot2 {
+        position: absolute;
+        margin-left: 50px;
+        margin-top: 50px;
+        z-index: -1;
+    }
+
+    .footer .spot2 svg{
+        width: 520px; 
+        height: 370px;
+    }
+    
+    .footer .conteiner {
+        position: relative;
+        z-index: 1;
+        margin-top: 250px;
+        display: grid;
+        grid-auto-flow: column;
+        text-align: left;
+        column-gap: 50px;
+    }
+    
+    .footer .logo  svg{
+        width: 150px;
+        margin-right: 80px;
+        margin-left: 50px;
+    }
+    
+    .footer .conteiner span {
+        font-family: 'GothamProRegular';
+        font-weight: 400;
+        font-size: 24px;
+        color: #333333;
+    }
+    
+    .footer .conteiner p {
+        font-family: 'GothamProRegular';
+        font-weight: 400;
+        font-size: 18px;
+        color: #333333;
+        margin: 30px 0;
+    }
+    
+    .footer .conteiner .img {
+        display: none;
+    }
+    
+    .footer .spot3 {
+        margin-left: 603px;
+        margin-top: 160px;
+    }
+
+    .footer .spot3 svg {
+        width: 420px; 
+        height: 270px;
+    }
+}

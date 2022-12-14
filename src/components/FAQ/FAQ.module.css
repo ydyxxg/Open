@@ -1,0 +1,119 @@
+.faq {
+  display: grid;
+  justify-content: center;
+  height: auto;
+}
+
+.faq .spot {
+  position: absolute;
+  z-index: -1;
+  margin-left: 828px;
+}
+
+.faq .conteiner {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 150px;
+  justify-content: center;
+  width: auto;
+
+}
+
+.faq .h3 {
+  font-family: 'GothamProBold';
+  font-weight: 700;
+  font-size: 48px;
+  margin-left: 650px;
+  color: #333333;
+}
+
+.accordion_title {
+  display: grid;
+  grid-auto-flow: column;
+  column-gap: 5px;
+  align-items: center;
+  font-family: 'GothamProBold';
+  font-weight: 700;
+  font-size: 26px;
+  text-align: right;
+  width: 650px;
+  height: 150px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 24px;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.title {
+  text-align: left;
+}
+  
+.accordion_content {
+  text-align: left;
+  width: 650px;
+  color: #333333;
+  padding: 0 40px;
+  margin-bottom: 40px;
+}
+
+.faq .conteiner .description {
+  width: 440px;
+  text-align: left;
+}
+
+.faq .conteiner .description span {
+  font-family: 'GothamProBold';
+  font-weight: 700;
+  font-size: 36px;
+  color: #333333;
+}
+
+.faq .conteiner .description p {
+  font-family: 'GothamProRegular';
+  font-weight: 400;
+  font-size: 18px;
+  color: #333333;
+}
+
+.faq .conteiner .description a {
+  color: #2B69DD;
+  text-decoration: none;
+  border-bottom: 1px solid #FBAC00;
+}
+
+@font-face { 
+  font-family: "GothamProRegular";
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+  src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+  url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face { 
+  font-family: "GothamProBold";
+  src: url("../fonts/GothamProBold/GothamProBold.eot");
+  src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+  url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+  url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 700;
+}
+
+@media(max-width: 1024px){
+
+  .faq .spot {
+    margin-left: 333px;
+  }
+
+  .faq .conteiner {
+    grid-auto-flow: row;
+    row-gap: 50px;
+  }
+
+  .faq .h3 {
+    margin-left: 330px;
+  }
+}

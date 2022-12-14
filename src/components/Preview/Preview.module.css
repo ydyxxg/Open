@@ -1,0 +1,98 @@
+.preview {
+    display: flex;
+    height: 1300px;
+}
+
+.preview .img img {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 20px;
+    width: 1200px;
+}
+
+.preview .spot svg {
+    margin-top: 80px;
+    margin-left: 829px;
+}
+
+.preview .preview_text {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    width: 550px;
+    margin-left: 900px;
+    margin-top: 350px;
+    text-align: left;
+}
+
+.preview .preview_text span{
+    font-family: 'GothamProBold';
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 100%;
+    color: #1BAAD1;
+}
+
+.preview .preview_text p{
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 28px;
+    color: #333333;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+
+    .preview {
+        overflow: hidden;
+        height: 1000px;
+    }
+
+    .preview .img {
+        margin-left: -50px;
+    }
+
+    .preview .img img {
+        width: 800px;
+    }
+
+    .preview .spot svg {
+        margin-top: 80px;
+        margin-left: 573px;
+        width: 500px;
+        height: 735px;
+    }
+
+    .preview .preview_text {
+        width: 500px;
+        margin-left: 580px;
+        margin-top: 275px;
+    }
+    
+    .preview .preview_text span{
+        font-size: 38px;
+    }
+    
+    .preview .preview_text p{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,205 @@
+.main {
+    display: flex;
+    height: 650px;
+}
+
+.main .graph_1 {
+    position: absolute;
+    margin-top: 136px;
+    opacity: 0.15;
+}
+
+.main .graph_2 {
+    position: absolute;
+    margin-top: 280px;
+    opacity: 0.15;
+}
+
+.main .bitcoin img {
+    position: absolute;
+    margin-left: 1050px;
+    margin-top: 48px;
+    width: 90px;
+    height: 90px;
+    opacity: 0.6;
+}
+
+.main .fct img{
+    position: absolute;
+    margin-left: 350px;
+    margin-top: 320px;
+    width: 56px;
+    height: 56px;
+}
+
+.main .ripple img{
+    position: absolute;
+    margin-left: 1105px;
+    margin-top: 403px;
+    transform: rotate(-21deg);
+    width: 64px;
+    height: 64px;
+}
+
+.main .ethereum img{
+    position: absolute;
+    margin-left: 200px;
+    margin-top: 90px;
+    transform: rotate(31.04deg);
+    width: 48px;
+    height: 48px;
+}
+
+.main img{
+    width: 1519.5px;
+}
+
+.main .h1 {
+    position: absolute;
+    font-family: 'GothamProBold';
+    margin-top: 140px;
+    margin-left: 430px;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #333333;
+}
+
+.main span {
+    position: absolute;
+    margin-top: 440px;
+    margin-left: 480px;
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    color: #333333;
+}
+
+.main .buttons {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 50px;
+    position: absolute;
+    margin-top: 520px;
+    margin-left: 500px;
+}
+
+.main .buttons .button_begin {
+    font-family: 'GothamProMedium';
+    font-weight: 500;
+    font-size: 18px;
+    width: 238px;
+    height: 50px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    border: none;
+    background: #87B645;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.main .buttons .button_know {
+    font-family: 'GothamProLight';
+    font-weight: 300;
+    font-size: 18px;
+    text-align: center;
+    width: 238px;
+    height: 50px;
+    color: #333333;
+    border: 1px solid #A0C4FA;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@font-face { 
+    font-family: "GothamProLight";
+    src: url("../fonts/GothamProLight/GothamProLight.eot");
+    src: url("../fonts/GothamProLight/GothamProLight.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProLight/GothamProLight.woff") format("woff"),
+    url("../fonts/GothamProLight/GothamProLight.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media(max-width: 1440px){
+    .main {
+        width: 1024px;
+    }
+
+    .main img{
+        width: 1024px;
+    }
+
+    .main .bitcoin img {
+        margin-left: 750px;
+        width: 80px;
+        height: 80px;
+
+    }
+    
+    .main .fct img{
+        margin-left: 250px;
+        width: 46px;
+        height: 46px;
+    }
+    
+    .main .ripple img{
+        margin-left: 900px;
+        width: 54px;
+        height: 54px;
+    }
+    
+    .main .ethereum img{
+        margin-left: 150px;
+        width: 38px;
+        height: 38px;
+    }
+
+    .main .h1 {
+        margin-top: 120px;
+        margin-left: 170px;
+    }
+    
+    .main span {
+        margin-top: 430px;
+        margin-left: 220px;
+    }
+    
+    .main .buttons {
+        margin-top: 520px;
+        margin-left: 250px;
+    }
+}

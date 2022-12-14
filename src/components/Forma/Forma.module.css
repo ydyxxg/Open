@@ -1,0 +1,225 @@
+.forma {
+    position: relative;
+    height: 1000px;
+    justify-content: center;
+}
+
+.forma .h3 {
+    font-family: 'GothamProBold';
+    font-weight: 700;
+    font-size: 48px;
+    color: #333333;
+}
+
+.forma p {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+  
+.forma .spot1 {
+    display: flex;
+    position: absolute;
+    margin-left: 250px;
+    margin-top: 200px;
+    z-index: 0;
+}
+
+.forma .spot2 {
+    display: flex;
+    position: absolute;
+    margin-left: 950px;
+    margin-top: 150px;
+    z-index: -1;
+}
+
+.forma .conteiner {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: row;
+    margin-left: 500px;
+    margin-top: 100px;
+    width: 630px;
+}
+
+.forma .conteiner .form {
+    display: grid;
+    grid-auto-flow: row;
+    row-gap: 16px;
+    justify-content: left;
+    margin-top: 104px;
+}
+
+.forma .conteiner .form input {
+    width: 460px;
+    height: 56px;
+    background: #FFFFFF;
+    border: 1px solid #D7D7D7;
+    border-radius: 4px;
+    padding-left: 16px;
+}
+
+.forma .conteiner .form input::-webkit-input-placeholder {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 14px;
+    color: #A1A1A3;
+}
+
+.custom_checkbox {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.custom_checkbox+label {
+    display: inline-flex;
+    user-select: none;
+    margin-top: 32px;
+    width: 480px;
+}
+
+.custom_checkbox+label::before {
+    content: '';
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #D7D7D7;;
+    border-radius: 1px;
+    margin-right: 16px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom_checkbox:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #D7D7D7;
+}
+
+.custom_checkbox:not(:disabled):active+label::before {
+    background-color: none;
+    border-color: #b3d7ff;
+}
+
+.custom_checkbox:focus:not(:checked)+label::before {
+    border-color: #D7D7D7;
+}
+
+.custom_checkbox:checked+label::before {
+    border-color: #b3d7ff;
+    background-color: #87B645;
+}
+
+.custom_checkbox:disabled+label::before {
+    background-color: none;
+    border-color: #D7D7D7;
+}
+
+.forma .conteiner .form label {
+    text-align: left;
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 14px;
+    color: #F5F5F5;
+}
+
+.forma .conteiner .form a {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 14px;
+    text-decoration: none;
+    border-bottom: 2px solid #FBAC00;
+    color: #FBAC00;
+}
+
+.forma .conteiner .form .button {
+    width: 268px;
+    height: 72px;
+    font-family: 'GothamProMedium';
+    font-weight: 500;
+    font-size: 24px;
+    border: none;
+    color: #FFFFFF;
+    background: #87B645;
+    border-radius: 4px;
+    margin-left: 106px;
+    margin-top: 55px;
+    cursor: pointer;
+}
+
+.forma .conteiner .img {
+    position: absolute;
+    margin-top: 800px;
+    margin-left: 900px;
+    cursor: pointer;
+}
+
+.forma .conteiner .img img {
+    width: 80px;
+    height: 80px;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+
+    .forma .spot1 {
+        display: flex;
+        position: absolute;
+        margin-left: 50px;
+    }
+
+    .forma .spot1 svg {
+        width: 880px;
+    }
+    
+    .forma .spot2 {
+        display: flex;
+        position: absolute;
+        margin-left: 580px;
+    }
+
+    .forma .spot2 svg {
+        width: 420px; 
+    }
+
+    .forma .conteiner {
+        margin-left: 300px;
+    }
+
+    .forma .conteiner .img {
+        margin-top: 750px;
+        margin-left: 600px;
+    }
+}

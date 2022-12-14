@@ -1,0 +1,126 @@
+.tab {
+    display: grid;
+    height: 700px;
+}
+
+.tab .conteiner {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-top: 90px;
+    column-gap: 20px;
+}
+
+.tab .conteiner .risks, .honest, .clear_pay {
+    width: 340px;
+    height: 490px;
+    background: white;
+    text-align: center;
+    border: 1px solid #D7D7D7;
+    border-radius: 24px;
+    padding: 24px;
+}
+
+.tab .conteiner .risks, .clear_pay {
+    margin-top: 24px;
+}
+
+.tab .conteiner .risks img, .honest img, .clear_pay img {
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+
+.tab .conteiner .risks span, .honest span, .clear_pay span {
+    font-family: 'GothamProBold';
+    font-weight: 700;
+    font-size: 22px;
+    text-align: center;
+    color: #333333;
+    margin-bottom: 22px;
+}
+
+.tab .conteiner .risks p, .honest p, .clear_pay p {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 18px;
+    text-align: center;
+    color: #333333;
+}
+
+.tab .conteiner .arrow {
+    margin-top: 300px;
+}
+
+.tab .arrow_slider{
+    display: none;
+    width: 45px;
+    margin-left: 900px;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+
+    .tab {
+        overflow: hidden;
+        height: 650px;
+    }
+    .tab .conteiner {
+        margin-top: 90px;
+        margin-left: 20px;
+        column-gap: 30px;
+    }
+    
+    .tab .conteiner .risks, .honest, .clear_pay {
+        width: 320px;
+        height: 470px;
+        padding: 16px;
+    }
+    
+    .tab .conteiner .risks, .clear_pay {
+        margin-top: 0px;
+    }
+    
+    .tab .conteiner .risks img, .honest img, .clear_pay img {
+        width: 170px;
+        height: 170px;
+    }
+    
+    .tab .conteiner .risks span, .honest span, .clear_pay span {
+        font-family: 'GothamProBold';
+        font-weight: 700;
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+    
+    .tab .conteiner .risks p, .honest p, .clear_pay p {
+        font-size: 16px;
+    }
+    
+    .tab .conteiner .arrow {
+        display: none;
+    }
+
+    .tab .arrow_slider{
+        margin-top: 30px;
+        display: inline-block;
+    }
+}

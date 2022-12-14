@@ -1,0 +1,228 @@
+.calc {
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    height: 850px;
+}
+
+.calc img{
+    width: 1519.5px;
+}
+
+.calc .graph_1 {
+    position: absolute;
+    margin-top: 120px;
+    opacity: 0.15;
+}
+
+.calc .graph_2 {
+    position: absolute;
+    margin-top: 280px;
+    opacity: 0.15;
+}
+
+.calc .h1 {
+    position: absolute;
+    font-family: 'GothamProBold';
+    margin-top: 210px;
+    margin-left: 440px;
+    font-weight: 700;
+    font-size: 50px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #333333;
+}
+
+.calc .inputs {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 60px;
+    width: 1150px;
+    margin-top: 435px;
+    margin-left: 205px;
+    text-align: left;
+}
+
+.calc .inputs label {
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+
+.calc .inputs input, .select {
+    width: 340px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 2px solid #D7D7D7;
+    border-radius: 8px;
+}
+
+.calc .inputs .slidecontainer .span_conteiner {
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: center;
+    margin-left: 3px;
+    column-gap: 215px;
+    width: 340px;
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 14px;
+    color: #A1A1A3;
+}
+
+.calc .text {
+    position: absolute;
+    display: grid;
+    grid-auto-flow: column;
+    text-align: left;
+    column-gap: 41px;
+    width: 1180px;
+    margin-top: 700px;
+    margin-left: 190px;
+}
+
+.calc .text span {
+    font-family: 'GothamProMedium';
+    font-weight: 500;
+    font-size: 42px;
+    color: #333333;
+}
+
+.calc .text font {
+    color: #FBAC00;
+}
+
+.calc .text p{
+    font-family: 'GothamProRegular';
+    margin-top: 24px;
+    font-weight: 400;
+    font-size: 18px;
+    color: #333333;
+}
+
+.calc .inputs input[type=range]::-webkit-slider-runnable-track {
+    height: 7px;
+    background: #87B645;
+    border-radius: 30px;
+    border: none;
+}
+
+.calc .inputs input[type=range]::-webkit-slider-thumb {
+    width: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    margin-top: -4px;
+}
+
+.calc .inputs .slider::-moz-range-thumb {
+    width: 25px;
+    border-radius: 50%;
+    background: #4CAF50;
+    cursor: pointer;
+}
+
+.calc .text .button {
+    width: 210px;
+    height: 55px;
+    font-family: 'GothamProMedium';
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #87B645;
+    border-radius: 4px;
+    border: none;
+    margin-left: 130px;
+    cursor: pointer;
+}
+.dogovor h2{
+    text-align: center;
+    font-family: "GothamProRegular";
+}
+
+.dogovor .pop {
+    display: grid;
+    grid-auto-flow: row;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProMedium";
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot");
+    src: url("../fonts/GothamProMedium/GothamProMedium.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProMedium/GothamProMedium.woff") format("woff"),
+    url("../fonts/GothamProMedium/GothamProMedium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}
+
+@media(max-width: 1024px){
+    .calc {
+        display: grid;
+        grid-auto-flow: column;
+        height: 850px;
+    }
+
+    .calc .graph_1 {
+        position: absolute;
+        margin-top: 120px;
+        opacity: 0.15;
+    }
+    
+    .calc .graph_2 {
+        position: absolute;
+        margin-top: 280px;
+        opacity: 0.15;
+    }
+    
+    .calc img{
+        width: 1024px;
+    }
+    
+    .calc .h1 {
+        margin-top: 120px;
+        margin-left: 190px;
+    }
+    
+    .calc .inputs {
+        position: relative;
+        display: grid;
+        grid-auto-flow: row;
+        column-gap: 60px;
+        width: 1024px;
+        margin-top: 310px;
+        margin-left: 205px;
+    }
+    
+    .calc .text {
+        grid-auto-flow: row;
+        width: 1024px;
+        margin-top: 350px;
+        margin-left: 650px;
+    }
+    
+    .calc .text .button {
+        margin-left: 0px;
+    }
+}

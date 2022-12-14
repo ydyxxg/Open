@@ -1,0 +1,186 @@
+.edge{
+    display: grid;
+    grid-auto-flow: row;
+    justify-content: center;
+    margin-top: 130px;
+    height: 1400px;
+}
+
+.edge .h3 {
+    font-family: 'GothamProBold';
+    height: 112px;
+    font-weight: 700;
+    font-size: 46px;
+    text-align: center;
+    color: #333333;
+}
+
+.edge .spot {
+    position: absolute;
+    z-index: -1;
+    margin-top: 40px;
+}
+
+.edge .conteiner {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 32px;
+    width: 950px;
+}
+
+.edge .conteiner .ordinaru {
+    display: grid;
+    grid-auto-flow: column;
+    width: 450px;
+    height: 120px;
+    background: #E7E9E8;
+    border-radius: 12px;
+    border-top: 11px solid #EB5757;
+}
+
+.edge .conteiner .ordinaru .question {
+    width: 85px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.edge .conteiner .ordinaru .ordinaru_logo{
+    position: relative;
+    margin-left: 244px;
+    margin-top: 15px;
+    width: 90px;
+}
+
+.edge .conteiner .ordinaru p {
+    position: absolute;
+    z-index: 1;
+    font-family: 'GothamProBold';
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 150px;
+    margin-top: 45px;
+    color: #333333;
+}
+
+.edge .conteiner .back {
+    display: grid;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    width: 400px;
+    height: 115px;
+    margin-top: 20px;
+    margin-left: 18px;
+    background: #ECECEC;
+    border-radius: 4px 8px 8px 4px;
+    border-left: 7px solid #EB5757;
+}
+
+.edge .conteiner .back_none{
+    display: grid;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    width: 400px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 4px 8px 8px 4px;
+    border-left: 7px solid #EB5757;
+}
+
+.edge .conteiner .cloudy {
+    display: grid;
+    grid-auto-flow: column;
+    width: 450px;
+    height: 120px;
+    background: #E7E9E8;
+    border-radius: 12px;
+    border-top: 11px solid #87B645;
+}
+.edge .conteiner .cloudy .check {
+    width: 85px;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.edge .conteiner .cloudy .cloudy_logo{
+    position: relative;
+    margin-left: 245px;
+    margin-top: 15px;
+    width: 90px;
+}
+
+.edge .conteiner .cloudy p {
+    position: absolute;
+    z-index: 1;
+    font-family: 'GothamProBold';
+    font-weight: 700;
+    font-size: 26px;
+    margin-left: 150px;
+    margin-top: 45px;
+    color: #333333;
+}
+
+.edge .conteiner .back_green {
+    display: grid;
+    width: 400px;
+    height: 115px;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    background: #ECECEC;
+    margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 4px 8px 8px 4px;
+    border-left: 7px solid #87B645;
+}
+
+.edge .conteiner .back_green_none{
+    display: grid;
+    font-family: 'GothamProRegular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    align-items: center;
+    text-align: left;
+    padding-left: 10px;
+    width: 400px;
+    height: 90px;
+    margin-top: 20px;
+    margin-left: 18px;
+    border-radius: 4px 8px 8px 4px;
+    border-left: 7px solid #87B645;
+}
+
+@font-face { 
+    font-family: "GothamProRegular";
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot");
+    src: url("../fonts/GothamProRegular/GothamProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProRegular/GothamProRegular.woff") format("woff"),
+    url("../fonts/GothamProRegular/GothamProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face { 
+    font-family: "GothamProBold";
+    src: url("../fonts/GothamProBold/GothamProBold.eot");
+    src: url("../fonts/GothamProBold/GothamProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/GothamProBold/GothamProBold.woff") format("woff"),
+    url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 700;
+}

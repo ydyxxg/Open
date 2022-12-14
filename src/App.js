@@ -1,24 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import {BrowserRouter, Switch} from 'react-router-dom';
+import Calc from './components/Calc/Calc';
+import Edge from './components/Edge/Edge';
+import Garant from './components/Garant/Garant';
+import Header from './components/Header/Header';
+import Main from './components/Main/Main';
+import Preview from './components/Preview/Preview';
+import Tab from './components/Tab/Tab';
+import TabContent from './components/FAQ/FAQ';
+import Forma from './components/Forma/Forma';
+import Footer from './components/Footer/Footer';
+ 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Header/>
+      <Main/>
+      <Preview/>
+      <Tab/>
+      <Edge/>
+      <Calc/>
+      <Garant/>
+      <TabContent/>
+      <Forma/>
+      <Footer/>
+    </BrowserRouter>
   );
 }
 
