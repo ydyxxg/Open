@@ -70,6 +70,12 @@
     font-weight: 400;
 }
 
+@media(max-width: 1440px){
+    .footer .spot3 {
+        margin-left: 775px;
+    }
+}
+
 @media(max-width: 1024px){
     
     .footer .spot1 {
@@ -136,5 +142,113 @@
     .footer .spot3 svg {
         width: 420px; 
         height: 270px;
+    }
+}
+
+@media(max-width: 768px){
+    .footer {
+        overflow: hidden;
+    }
+    
+    .footer .spot1 {
+        margin-top: 195px;
+    }
+
+    .footer .spot1 svg{
+        width: 400px; 
+        height: 240px;
+    }
+    
+    .footer .spot2 {
+        margin-left: 80px;
+        margin-top: 180px;
+    }
+
+    .footer .spot2 svg{
+        width: 400px; 
+        height: 240px;
+    }
+    
+    .footer .logo  svg{
+        width: 150px;
+        margin-right: 50px;
+        margin-left: 60px;
+    }
+    
+    .footer .conteiner span {
+        display: none;
+    }
+    
+    .footer .conteiner p {
+        display: none;
+    }
+    
+    .footer .conteiner .img {
+        display: inline;
+        margin-left: 100px;
+        margin-right: 40px;
+    }
+    
+    .footer .spot3 {
+        margin-left: 474px;
+        margin-top: 265px;
+    }
+
+    .footer .spot3 svg {
+        width: 320px; 
+        height: 170px;
+    }
+}
+
+@media(max-width: 320px){
+    .footer{
+        height: 250px;
+    }
+    
+    .footer .spot1 {
+        margin-top: 148px;
+    }
+
+    .footer .spot1 svg{
+        Width: 121.46px;
+        Height: 103.24px;
+    }
+    
+    .footer .spot2 {
+        margin-left: 60px;
+        margin-top: 160px;
+    }
+
+    .footer .spot2 svg{
+        Width: 68.13px;
+        Height: 58.82px;
+    }
+    
+    .footer .conteiner {
+        margin-top: 100px;
+        column-gap: 50px;
+    }
+    
+    .footer .logo  svg{
+        width: 130px;
+        height: 48px;
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    
+    .footer .conteiner .img {
+        position: absolute;
+        margin-left: 170px;
+        margin-right: 40px;
+    }
+    
+    .footer .spot3 {
+        margin-left: 145px;
+        margin-top: 140px;
+    }
+
+    .footer .spot3 svg{
+        width: 176px;
+        height: 112px;
     }
 }

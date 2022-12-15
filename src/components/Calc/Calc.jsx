@@ -76,21 +76,25 @@ const Calc = () => {
                 </div>
             </div>
             <div className={styles.text}>
-                <div>
-                    <span>90 000 руб.</span>
-                    <p>Стоимость контракта</p>
+                <div className={styles.column}>
+                    <div className={styles.text_div}>
+                        <span>90 000 руб.</span>
+                        <p>Стоимость контракта</p>
+                    </div>
+                    <div className={styles.text_div}>
+                        <span>BTC</span>
+                        <p>Валюта</p>
+                    </div>
                 </div>
-                <div>
-                    <span>BTC</span>
-                    <p>Валюта</p>
-                </div>
-                <div>
-                    <span><font>0</font> руб.</span>
-                    <p>Обслуживание</p>
-                </div>
-                <div>
-                    <span><font>1,35</font> втс</span>
-                    <p>Выплата за период</p>
+                <div className={styles.column}>
+                    <div className={styles.text_div}>
+                        <span><font>0</font> руб.</span>
+                        <p>Обслуживание</p>
+                    </div>
+                    <div className={styles.text_div}>
+                        <span><font>1,35</font> втс</span>
+                        <p>Выплата за период</p>
+                    </div>
                 </div>
                 <div>
                     <button className={styles.button} onClick={togglePopup}>Заключить контракт</button>

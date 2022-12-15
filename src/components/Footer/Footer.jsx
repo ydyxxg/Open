@@ -17,7 +17,6 @@ const Footer = () => {
                 <Spot2/>
             </div>
             <div className={styles.conteiner}>
-                
                 <div className={styles.logo}>
                     <Logo/>
                 </div>

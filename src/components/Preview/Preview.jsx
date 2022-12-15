@@ -11,7 +11,7 @@ const Preview = () => {
             </div>
             <div className={styles.preview_text}>
                 <span>open mining</span>
-                <p>&mdash; это прозрачный заработок <br/> на майнинге криптовалют, а самое <br/> главное &mdash; мы находимся в России.</p>
+                <p>&mdash; это прозрачный заработок <br/> на майнинге криптовалют, а самое главное &mdash; мы находимся в России.</p>
             </div>
             <div className={styles.spot}>
                 <Spot/>

@@ -102,10 +102,15 @@
   font-weight: 700;
 }
 
-@media(max-width: 1024px){
-
+@media(max-width: 1440px){
   .faq .spot {
-    margin-left: 333px;
+    margin-left: 750px;
+  }
+}
+
+@media(max-width: 1024px){
+  .faq .spot {
+    margin-left: 334px;
   }
 
   .faq .conteiner {
@@ -115,5 +120,63 @@
 
   .faq .h3 {
     margin-left: 330px;
+  }
+}
+
+@media(max-width: 768px){
+  .faq .spot {
+    margin-left: 77px;
+  }
+}
+
+@media(max-width: 320px){
+  .faq {
+    overflow: hidden;
+  }
+
+  .faq .conteiner {
+    grid-auto-flow: row;
+    justify-content: center;
+    row-gap: 50px;
+  }
+  
+  .faq .h3 {
+    font-size: 24px;
+    margin-left: 125px;
+  }
+  
+  .accordion_title {
+    font-size: 14px;
+    width: 280px;
+    height: 80px;
+    padding: 0 10px;
+    margin-left: 5px;
+  }
+    
+  .accordion_content {
+    width: 312px;
+  }
+  
+  .faq .conteiner .description {
+    width: 308px;
+    margin-left: 5px;
+  }
+  
+  .faq .conteiner .description span {
+    font-size: 18px;
+  }
+  
+  .faq .conteiner .description p {
+    font-size: 14px;
+  }
+
+  .faq .spot {
+    margin-top: -105px;
+    margin-left: 120px;
+  }
+
+  .faq .spot svg {
+    width: 200px;
+    height: 1000px;
   }
 }

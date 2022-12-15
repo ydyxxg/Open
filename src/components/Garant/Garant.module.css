@@ -140,6 +140,20 @@
     text-align: center;
 }
 
+.garant .conteiner .atention .atention_div {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 16px;
+}
+
+.garant .conteiner .atention a{
+    font-family: 'GothamProRegular';
+    font-weight: 400;
+    font-size: 18px;
+    text-decoration-line: underline;
+    color: #75ACFE;
+}
+
 @font-face { 
     font-family: "GothamProRegular";
     src: url("../fonts/GothamProRegular/GothamProRegular.eot");
@@ -213,5 +227,201 @@
     
     .garant .conteiner .card_pic{
         margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px){
+    .garant .conteiner {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 75px;
+        justify-content: center;
+        margin-top: 80px;
+    }
+    
+    .garant .spot {
+        position: absolute;
+        z-index: -1;
+        margin-left: 20px;
+    }
+
+    .garant .conteiner .numbers {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 30px;
+        justify-content: center;
+    }
+
+    .garant .conteiner .numbers .number_1, .number_2, .number_3 {
+        width: 500px;
+        height: 300px;
+        padding-left: 30px;
+    }
+
+    .garant .conteiner .numbers .number_1 img{
+        margin-left: 360px;
+    }
+    
+    .garant .conteiner .numbers .number_2 img {
+        margin-left: 330px;
+    }
+    
+    .garant .conteiner .numbers .number_3 img {
+        margin-left: 330px;
+    }
+    
+    .garant .conteiner .numbers .header {
+        width: 450px;
+    }
+    
+    .garant .conteiner .numbers p {
+        width: 350px;
+    }
+    
+    .garant .conteiner .numbers .leave1 img {
+        margin: 0;
+        margin-top: 20px;
+        margin-left: 1px
+    }
+    
+    .garant .conteiner .numbers .leave2 img {
+        margin-top: 50px;
+        margin-left: 1px;
+    }
+    
+    .garant .conteiner .card_pic {
+        margin-left: 0px;
+    }
+
+    .garant .conteiner .card_pic img {
+        width: 750px;
+    }
+    
+    .garant .conteiner .atention {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 16px;
+        justify-content: center;
+        font-family: 'GothamProRegular';
+        font-style: normal;
+        font-weight: 400;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media(max-width: 320px){
+
+    .garant{
+        overflow: hidden;
+    }
+
+    .garant .conteiner {
+        margin-top: 40px;
+        row-gap: 50px;
+    }
+    
+    .garant .spot {
+        position: absolute;
+        z-index: -1;
+        margin-left: 0px;
+        margin-top: 150px;
+    }
+
+    .garant .spot svg {
+        width: 320px;
+        height: 272px;
+    }
+    
+    .garant .conteiner .h3 {
+        font-size: 24px;
+        margin-top: 150px;
+        margin-left: 0;
+    }
+    
+    .garant .conteiner .numbers {
+        width: 320px;
+        grid-auto-flow: row;
+    }
+    
+    .garant .conteiner .numbers .number_1, .number_2, .number_3 {
+        width: 300px;
+        height: 280px;
+        padding-left: 10px;
+    }
+    
+    .garant .conteiner .numbers .number_1 img{
+        width: 160px;
+        height: 112px;
+        margin-left: 140px;
+    }
+    
+    .garant .conteiner .numbers .number_2 img {
+        width: 192px;
+        height: 112px;
+        margin-left: 107px;
+    }
+    
+    .garant .conteiner .numbers .number_3 img {
+        width: 192px;
+        height: 112px;
+        margin-left: 107px;
+    }
+
+    .garant .conteiner .numbers .header {
+        width: 310px;
+    }
+    
+    .garant .conteiner .numbers p {
+        position: relative;
+        font-family: 'GothamProRegular';
+        font-weight: 400;
+        font-size: 14px;
+        text-align: left;
+        width: 280px;
+        color: #333333;
+    }
+    
+    .garant .conteiner .numbers .leave1 img {
+        margin: 0;
+        width: 48px;
+        height: 48px;
+        margin-top: 20px;
+        margin-left: 1px
+    }
+    
+    .garant .conteiner .numbers .leave2 img {
+        margin-top: 10px;
+        margin-left: 1px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .garant .conteiner .card_pic{
+        margin-left: 0px;
+    }
+
+    .garant .conteiner .card_pic img {
+        width: 310px;
+        height: 160px;
+    }
+    
+    .garant .conteiner .atention {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 16px;
+        width: 310px;
+    }
+
+    .garant .conteiner .atention .atention_div {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        align-items: center;
+        column-gap: 16px;
+    }
+
+    .garant .conteiner .atention a{
+        font-size: 14px;
     }
 }

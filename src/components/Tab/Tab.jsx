@@ -30,5 +30,5 @@ const Tab = () => {
             <img src={Icon_arrow} alt="Arrow" className={styles.arrow_slider}/>
         </div>
     ) 
-}
+ }
 export default Tab

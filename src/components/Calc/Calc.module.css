@@ -6,7 +6,7 @@
 }
 
 .calc img{
-    width: 1519.5px;
+    width: 1347px;
 }
 
 .calc .graph_1 {
@@ -34,13 +34,12 @@
 }
 
 .calc .inputs {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     column-gap: 60px;
-    width: 1150px;
+    height: auto;
     margin-top: 435px;
-    margin-left: 205px;
     text-align: left;
 }
 
@@ -73,14 +72,18 @@
 }
 
 .calc .text {
-    position: absolute;
+    position: relative;
     display: grid;
     grid-auto-flow: column;
     text-align: left;
-    column-gap: 41px;
+    column-gap: 30px;
     width: 1180px;
-    margin-top: 700px;
-    margin-left: 190px;
+}
+
+.calc .text .column {
+    display: grid;
+    grid-auto-flow: column;
+    column-gap: 30px;
 }
 
 .calc .text span {
@@ -181,7 +184,10 @@
     .calc {
         display: grid;
         grid-auto-flow: column;
-        height: 850px;
+        justify-content: center;
+        width: 1024px;
+        column-gap: 100px;
+        height: auto;
     }
 
     .calc .graph_1 {
@@ -210,19 +216,160 @@
         display: grid;
         grid-auto-flow: row;
         column-gap: 60px;
-        width: 1024px;
         margin-top: 310px;
-        margin-left: 205px;
     }
     
     .calc .text {
         grid-auto-flow: row;
-        width: 1024px;
         margin-top: 350px;
-        margin-left: 650px;
+        width: 300px;
+    }
+
+    .calc .text .column {
+        column-gap: 50px;
     }
     
     .calc .text .button {
         margin-left: 0px;
+    }
+}
+
+@media(max-width: 768px){
+    .calc {
+        display: grid;
+        grid-auto-flow: column;
+        justify-content: center;
+        column-gap: 40px;
+        height: auto;
+        width: 768px;
+    }
+    
+    .calc img{
+        width: 768px;
+    }
+
+    .calc .h1 {
+        margin-left: 65px;
+    }
+
+    .calc .inputs {
+        position: none;
+        display: grid;
+        grid-auto-flow: row;
+        column-gap: 60px;
+        margin-top: 310px;
+        margin-left: 50px;
+    }
+
+    .calc .inputs input, .select {
+        width: 300px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 2px solid #D7D7D7;
+        border-radius: 8px;
+    }
+
+    .calc .inputs .slidecontainer .span_conteiner {
+        margin-left: 0px;
+    }
+    
+    .calc .text {
+        grid-auto-flow: row;
+        margin-top: 330px;
+    }
+}
+
+@media(max-width: 320px){
+    .calc {
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        width: 320px;
+        height: auto;
+    }
+    
+    .calc img{
+        width: 320px;
+    }
+    
+    .calc .h1 {
+        margin-top: 130px;
+        margin-left: 0px;
+        font-size: 24px;
+    }
+    
+    .calc .inputs {
+        position: none;
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 30px;
+        margin-top: 250px;
+        margin-left: 10px;
+    }
+    
+    .calc .inputs label {
+        font-family: 'GothamProRegular';
+        font-weight: 400;
+        font-size: 18px;
+        color: #333333;
+    }
+    
+    .calc .inputs input, .select {
+        width: 290px;
+        height: 56px;
+    }
+    
+    .calc .inputs .slidecontainer .span_conteiner {
+        margin-left: -30px;
+        column-gap: 150px;
+        width: 340px;
+    }
+    
+    .calc .text {
+        grid-auto-flow: row;
+        margin-top: 30px;
+        margin-left: 10px;
+    }
+
+    .calc .text .column {
+        display: grid;
+        grid-auto-flow: column;
+        column-gap: 30px;
+    }
+    
+    .calc .text span {
+        font-family: 'GothamProMedium';
+        font-weight: 500;
+        font-size: 42px;
+        color: #333333;
+    }
+    
+    .calc .text font {
+        color: #FBAC00;
+    }
+    
+    .calc .text p{
+        font-family: 'GothamProRegular';
+        margin-top: 24px;
+        font-weight: 400;
+        font-size: 18px;
+        color: #333333;
+    }
+    
+    .calc .text .button {
+        width: 250px;
+        height: 60px;
+        font-size: 19px;
+        margin-top: 40px;
+        margin-left: 20px;
+    }
+    .dogovor h2{
+        text-align: center;
+        font-family: "GothamProRegular";
+    }
+    
+    .dogovor .pop {
+        display: grid;
+        grid-auto-flow: row;
     }
 }

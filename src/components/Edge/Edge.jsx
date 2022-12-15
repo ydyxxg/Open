@@ -15,7 +15,6 @@ const Edge = () => {
             <div className={styles.spot}>
                 <Spot/>
             </div>
-            
             <div className={styles.conteiner}>
                 <div>
                     <div className={styles.ordinaru}>

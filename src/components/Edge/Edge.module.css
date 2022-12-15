@@ -1,14 +1,13 @@
-.edge{
+.edge {
     display: grid;
     grid-auto-flow: row;
     justify-content: center;
     margin-top: 130px;
-    height: 1400px;
+    height: auto;
 }
 
 .edge .h3 {
     font-family: 'GothamProBold';
-    height: 112px;
     font-weight: 700;
     font-size: 46px;
     text-align: center;
@@ -25,7 +24,6 @@
     display: grid;
     grid-auto-flow: column;
     column-gap: 32px;
-    width: 950px;
 }
 
 .edge .conteiner .ordinaru {
@@ -183,4 +181,131 @@
     url("../fonts/GothamProBold/GothamProBold.ttf") format("truetype");
     font-style: normal;
     font-weight: 700;
+}
+
+@media(max-width: 768px){
+    .edge{
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        margin-top: 130px;
+        width: 768px;
+        height: auto;
+    }
+
+    .edge .conteiner {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 40px;
+        justify-content: center;
+        width: 768px;
+    }
+
+}
+
+@media(max-width: 320px){
+    .edge{
+        display: grid;
+        grid-auto-flow: row;
+        justify-content: center;
+        width: 320px;
+        height: auto;
+    }
+    .edge .h3 {
+        font-size: 24px;
+        width: 312px;
+    }
+    
+    .edge .spot  svg{
+        width: 256px;
+        height: 384px;
+    }
+    
+    .edge .conteiner {
+        display: grid;
+        grid-auto-flow: row;
+        row-gap: 40px;
+        justify-content: center;
+        margin-left: 0px;
+        width: 320px;
+    }
+
+    .edge .conteiner .ordinaru {
+        width: 290px;
+        height: 104px;
+    }
+    
+    .edge .conteiner .ordinaru .question {
+        width: 48px;
+        height: 48px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    
+    .edge .conteiner .ordinaru .ordinaru_logo{
+        margin-left: 130px;
+        margin-top: 10px;
+        width: 90px;
+    }
+    
+    .edge .conteiner .ordinaru p {
+        font-size: 18px;
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    
+    .edge .conteiner .back {
+        font-size: 14px;
+        width: 255px;
+        height: 135px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    .edge .conteiner .back_none{
+        font-size: 14px;
+        width: 255px;
+        height: 90px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    .edge .conteiner .cloudy {
+        width: 290px;
+        height: 104px;
+    }
+    .edge .conteiner .cloudy .check {
+        width: 48px;
+        height: 48px;
+        margin-top: 25px;
+        margin-left: 20px;
+    }
+    
+    .edge .conteiner .cloudy .cloudy_logo{
+        margin-left: 130px;
+        margin-top: 10px;
+        width: 90px;
+    }
+    
+    .edge .conteiner .cloudy p {
+        font-size: 18px;
+        margin-left: 80px;
+        margin-top: 40px;
+    }
+    
+    .edge .conteiner .back_green {
+        font-size: 14px;
+        width: 255px;
+        height: 110px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
+    
+    .edge .conteiner .back_green_none{
+        font-size: 14px;
+        width: 255px;
+        height: 90px;
+        margin-top: 20px;
+        margin-left: 10px;
+    }
 }

@@ -192,7 +192,25 @@
     font-weight: 700;
 }
 
+@media(max-width: 1440px){
+    .forma .spot2 {
+        display: flex;
+        position: absolute;
+        margin-left: 850px;
+    }
+
+    .forma .conteiner .img {
+        margin-top: 800px;
+        margin-left: 800px;
+    }
+}
+
 @media(max-width: 1024px){
+
+    .forma {
+        display: grid;
+        justify-content: center;
+    }
 
     .forma .spot1 {
         display: flex;
@@ -214,12 +232,131 @@
         width: 420px; 
     }
 
-    .forma .conteiner {
-        margin-left: 300px;
+    .forma .conteiner  {
+        margin-left: 250px;
     }
 
     .forma .conteiner .img {
         margin-top: 750px;
         margin-left: 600px;
+    }
+}
+
+@media(max-width: 768px){
+
+    .forma {
+        overflow: hidden;
+    }
+
+    .forma .spot1 {
+        margin-left: -50px;
+    }
+
+    .forma .spot1 svg {
+        width: 880px;
+    }
+    
+    .forma .spot2 {
+        margin-left: 550px;
+    }
+
+    .forma .spot2 svg {
+        width: 420px; 
+    }
+
+    .forma .conteiner {
+        margin-left: 150px;
+    }
+
+    .forma .conteiner .img {
+        margin-top: 750px;
+        margin-left: 500px;
+    }
+}
+
+@media(max-width: 320px) {
+
+    .forma {
+        height: 850px;
+    }
+    
+    .forma .h3 {
+        text-align: center;
+        font-size: 24px;
+    }
+    
+    .forma p {
+        text-align: center;
+        font-size: 14px;
+    }
+      
+    .forma .spot1 {
+        margin-left: -250px;
+        margin-top: 130px;
+    }
+
+    .forma .spot1 svg {
+        Width: 654.5px;
+        Height: 600px;
+    }
+    
+    .forma .spot2 {
+        margin-left: 200px;
+        margin-top: 150px;
+    }
+
+    .forma .spot2 svg {
+        Width: 369.3px;
+        Height: 292.61px;
+    }
+    
+    .forma .conteiner {
+        margin-left: 0px;
+        margin-top: 100px;
+        width: 320px;
+    }
+    
+    .forma .conteiner .form {
+        margin-top: 50px;
+        margin-left: 7px;
+        width: 310px;
+    }
+    
+    .forma .conteiner .form input {
+        width: 290px;
+        height: 56px;
+        padding-left: 10px;
+    }
+    
+    .custom_checkbox+label {
+        display: inline-flex;
+        user-select: none;
+        margin-top: 32px;
+        width: 320px;
+    }
+    
+    .forma .conteiner .form label {
+        font-size: 12px;
+    }
+    
+    .forma .conteiner .form a {
+        font-size: 12px;
+    }
+    
+    .forma .conteiner .form .button {
+        width: 264px;
+        height: 72px;
+        margin-top: 55px;
+        margin-left: 25px;
+    }
+    
+    .forma .conteiner .img {
+        margin-top: 700px;
+        margin-left: 250px;
+    }
+    
+    .forma .conteiner .img img {
+        width: 64px;
+        height: 64px;
     }
 }

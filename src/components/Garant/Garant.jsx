@@ -45,8 +45,10 @@ const Garant = () => {
                     </div>
                 </div>
                 <div className={styles.atention}>
-                    <img src={Icon_atention} alt="Icon_atention"/>
-                    <p>Наши возможности:</p>
+                    <div className={styles.atention_div}>
+                        <img src={Icon_atention} alt="Icon_atention"/>
+                        <p>Наши возможности:</p>
+                    </div>
                     <a href="https://www.poolin.com/my/9053220/b..." target="_blank">https://www.poolin.com/my/9053220/b...</a>
                 </div>
             </div>
